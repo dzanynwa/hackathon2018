@@ -1,0 +1,24 @@
+<!--
+  Generated template for the RacuniPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Računi</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list class="list" no-lines>
+        <ion-item no-lines class="item" *ngFor = "let mjesec of mjeseciList | async; let i = index">
+              <h2 style="padding-bottom: 5px">{{mjesec.imeMjeseca}}</h2>
+              <p>Kolicina: {{mjesec.struja}}kWh</p>
+              <p style="border-bottom: 1px solid black; padding-bottom: 5px">Iznos: {{mjesec.iznos}}KM</p>
+        </ion-item>  
+      </ion-list>
+</ion-content>

@@ -38,10 +38,16 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  smart:      rgb(0,138,116),
+  gray: gray
 );
-
-
+$toolbar-background: rgb(0,138,116);
+$tabs-tab-color-active: color($colors, light);
+$tabs-background: color($colors, smart);
+$tabs-tab-color: color($colors, light);
+$toggle-ios-background-color-on: color($colors, light);
+$toggle-ios-handle-background-color: color($colors, smart);
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here

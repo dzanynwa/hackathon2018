@@ -1,17 +1,50 @@
+
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+      <h3 class="navH3">Rezidencija <br> Mehić</h3>
+      <img src="../assets/imgs/home.png" alt="" class="navIcon">
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <div class="users">
+    <div class="user">
+      <img src="../assets/imgs/active.png" alt="">
+      <h5>Tata</h5>
+    </div>
+    <div class="user" style="margin-left: 14px;">
+        <img src="../assets/imgs/notactive.png" alt="">
+        <h5>Mama</h5>
+    </div>
+    <div class="user" style="margin-left: 14px;">
+        <img src="../assets/imgs/notactive.png" alt="">
+        <h5>Sin</h5>
+    </div>
+    <div class="user" style="margin-left: 14px;">
+        <img src="../assets/imgs/active.png" alt="">
+        <h5>Kčer</h5>
+    </div>
+  </div>  
+  <div class="card" style="margin-top: 10px;" (click) = "goPotrosnja()">
+    <div class="left">
+      <h4>Potrošnja: </h4>
+      <h5>38.5 KM</h5>
+    </div>
+    <div class="right">
+      <img src="../assets/imgs/money.png" alt="">
+    </div>
+  </div>
+      <ion-item class="itembg" no-lines>
+          <ion-label class="label" >Glavni Ulaz: </ion-label>
+          <ion-toggle class="toggle"></ion-toggle>
+      </ion-item>
+      <ion-item class="itembg" no-lines>
+          <ion-label class="label" >Garaža: </ion-label>
+          <ion-toggle class="toggle"></ion-toggle>
+      </ion-item>
+
+      <ion-item class="itembg" no-lines>
+          <ion-label class="label" >Holiday Mode: </ion-label>
+          <ion-toggle class="toggle"></ion-toggle>
+      </ion-item>
 </ion-content>

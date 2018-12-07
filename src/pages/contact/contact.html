@@ -1,17 +1,36 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Opcije
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
+      <ion-item class="itembg card" no-lines (click) = "goRacuni()">
+          <div class="left">
+            <h1>Računi</h1>
+          </div>
+          <div class="right">
+            <img src="../assets/imgs/bills.png" alt="" style="margin-left: 35px;">
+          </div>
+      </ion-item>
+      <ion-item class="itembg card" no-lines (click) = "goTips()">
+          <div class="left">
+            <h1>Savjeti za Štednju</h1>
+          </div>
+          <div class="right">
+            <img src="../assets/imgs/tips.png" alt="" style="margin-left: 35px;">
+          </div>
+      </ion-item>
+      <ion-item class="itembg card" no-lines (click) = "goRacuni()">
+          <div class="left">
+            <h1>Stednja</h1>
+          </div>
+          <div class="right">
+            <img src="../assets/imgs/bills.png" alt="" style="margin-left: 35px;">
+          </div>
+      </ion-item>
   </ion-list>
 </ion-content>

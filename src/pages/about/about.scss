@@ -1,3 +1,20 @@
 page-about {
 
+
+    .left{
+        padding: 5px 15px;
+        width: 70%;
+        display: inline-block;
+    }
+    .right{
+        width: 20%;
+        display: inline-block;
+    }
+    .card{
+        margin-top: 15px;
+        border-radius: 15px;
+        background-image: linear-gradient(rgb(0,138,116),rgb(9, 61, 52)); 
+        padding: 10px;
+        color: white;
+    }
 }
