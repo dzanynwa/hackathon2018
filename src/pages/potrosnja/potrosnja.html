@@ -21,5 +21,11 @@
         <ion-card-content>
           <canvas #barCanvas></canvas>
         </ion-card-content>
+    </ion-card>
+    <ion-list>
+      <ion-card class = "card" *ngFor = "let device of deviceList | async">
+        <h3>{{device.uredjaj}}</h3>
+        <p>{{device.potrosnja}} kWh</p>
       </ion-card>
+    </ion-list>
 </ion-content>

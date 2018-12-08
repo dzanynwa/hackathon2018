@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>InfoPage</ion-title>
+    <ion-title>Upravljanje</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -18,7 +18,7 @@
   
   <ion-item class="itembg" no-lines>
       <ion-label class="label" >On/off: </ion-label>
-      <ion-toggle color="secondary"[(ngModel)]="ulaz.open" class="toggle" (ionChange) = "paligasi(device.power, device.$key)"></ion-toggle>
+      <ion-toggle color="secondary"[(ngModel)]="device.power" class="toggle" (ionChange) = "paligasi(device.power, device.$key)"></ion-toggle>
   </ion-item>
   <h3 *ngIf=" device.volume != null" >Volume:</h3> 
   <ion-item>
@@ -29,8 +29,6 @@
   </ion-item>
   <br>
   <br>
-  <button ion-button *ngIf=" device.volume != null" style="margin-left: 10px" color="secondary">-</button>
-  <button ion-button *ngIf=" device.volume != null" style="margin-left: 15px" color="secondary">+</button>
   <br>
   <br>
   <h5 style="font-weight: 300">Potrosnja: {{device.potrosnja}} kWh</h5>

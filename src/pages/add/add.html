@@ -7,17 +7,17 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>AddPage</ion-title>
+    <ion-title>Dodaj uređaj</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-label>Unesi ime uredjaja: </ion-label>
+  <ion-label style = "border-bottom: 2px solid rgb(0,138,116); padding-bottom: 5px;">Unesi ime uređaja: </ion-label>
   <ion-input [(ngModel)] = "uredjaj"></ion-input>
-  <ion-label>Unesi potrosnju uredjaja: </ion-label>
+  <ion-label style = "border-bottom: 2px solid rgb(0,138,116); padding-bottom: 5px;">Unesi potrosnju uređaja: </ion-label>
   <ion-input [(ngModel)] = "potrosnja"></ion-input>
 
-  <button ion-button (click) = "dodaj()">Dodaj Uredjaj</button>
+  <button ion-button full class = "button" (click) = "dodaj()">Dodaj Uređaj</button>
 </ion-content>
