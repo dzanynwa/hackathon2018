@@ -18,6 +18,9 @@ import { LoginPage } from '../pages/login/login';
 import { PotrosnjaPage } from '../pages/potrosnja/potrosnja';
 import { RacuniPage } from '../pages/racuni/racuni';
 import { TipsPage } from '../pages/tips/tips';
+import { SobaPage } from '../pages/soba/soba';
+import { AddPage } from '../pages/add/add';
+import { InfoPage } from '../pages/info/info';
 
 var config = {
   apiKey: "AIzaSyAJlH864lw_OdLbsBoUB0iPEdHnJcsmLFM",
@@ -38,6 +41,9 @@ var config = {
     PotrosnjaPage,
     RacuniPage,
     TipsPage,
+    SobaPage,
+    AddPage,
+    InfoPage,
     TabsPage
   ],
   imports: [
@@ -57,6 +63,9 @@ var config = {
     PotrosnjaPage,
     TipsPage,
     RacuniPage,
+    SobaPage,
+    AddPage,
+    InfoPage,
     TabsPage
   ],
   providers: [

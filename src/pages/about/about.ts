@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { SobaPage } from '../soba/soba';
 
 @Component({
   selector: 'page-about',
@@ -11,4 +12,7 @@ export class AboutPage {
 
   }
 
+  goSoba(i){
+    this.navCtrl.push(SobaPage, {i});
+  }
 }

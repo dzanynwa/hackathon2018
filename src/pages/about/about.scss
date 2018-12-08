@@ -12,9 +12,15 @@ page-about {
     }
     .card{
         margin-top: 15px;
-        border-radius: 15px;
-        background-image: linear-gradient(rgb(0,138,116),rgb(9, 61, 52)); 
+        border-radius: 3px;
+        background-color: rgb(0,138,116); 
         padding: 10px;
         color: white;
+        
+    }
+
+    h1 {
+        position: absolute;
+        bottom: 30%;
     }
 }

@@ -10,9 +10,14 @@ page-contact {
     }
     .card{
         margin-top: 15px;
-        border-radius: 15px;
-        background-image: linear-gradient(rgb(0,138,116),rgb(9, 61, 52)); 
+        border-radius: 3px;
+        background-color: rgb(0,138,116); 
         padding: 10px;
         color: white;
+        box-shadow: 1px 5px 3px 1px #cfcfcf;
+    }
+    h1 {
+        position: absolute;
+        bottom: 30%;
     }
 }
